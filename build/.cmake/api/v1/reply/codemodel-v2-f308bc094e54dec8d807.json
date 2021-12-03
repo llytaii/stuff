@@ -1,0 +1,149 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "t",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ascii::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ascii-Release-98b0563b845e0e146298.json",
+					"name" : "ascii",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ceasar_cipher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ceasar_cipher-Release-1c157e6ac0fdad834e05.json",
+					"name" : "ceasar_cipher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dct::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dct-Release-7a9393e51c236f8c1dff.json",
+					"name" : "dct",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fib-Release-f06fcd7c58194a00581e.json",
+					"name" : "fib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linked_list::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linked_list-Release-51472634863a12fa60f9.json",
+					"name" : "linked_list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lsmsg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lsmsg-Release-9f90e19e641575dfffe4.json",
+					"name" : "lsmsg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lzw::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lzw-Release-c01375f84677769955eb.json",
+					"name" : "lzw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "perlin_noise::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-perlin_noise-Release-61234682df1843169e38.json",
+					"name" : "perlin_noise",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "po_tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-po_tests-Release-a359d76ca87c91ac986d.json",
+					"name" : "po_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rng::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rng-Release-005fd8d4c14b4a5e39e3.json",
+					"name" : "rng",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t-Release-276dc7df8b965053dd3d.json",
+					"name" : "t",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/llytaii/dev/cpp/stuff/build",
+		"source" : "/home/llytaii/dev/cpp/stuff"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}
