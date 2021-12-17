@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "t"
+			"path" : "rng"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +10,8 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -24,7 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 19,
 				"parent" : 0
 			}
 		]
@@ -35,10 +42,17 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-O3 -DNDEBUG"
+					"fragment" : "-g"
 				},
 				{
 					"fragment" : "-std=gnu++2a"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "/home/llytaii/dev/cpp/stuff/include"
 				}
 			],
 			"language" : "CXX",
@@ -48,13 +62,13 @@
 			]
 		}
 	],
-	"id" : "t::@6890427a1f51a3e7e1df",
+	"id" : "rng::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O3 -DNDEBUG",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
@@ -64,8 +78,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "t",
-	"nameOnDisk" : "t",
+	"name" : "rng",
+	"nameOnDisk" : "rng",
 	"paths" : 
 	{
 		"build" : ".",
@@ -86,7 +100,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/t.cpp",
+			"path" : "src/rng_test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

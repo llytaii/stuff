@@ -28,7 +28,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -58,77 +58,77 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ascii::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ascii-Release-98b0563b845e0e146298.json",
+					"jsonFile" : "target-ascii-Debug-43b321ed9fa48876e918.json",
 					"name" : "ascii",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ceasar_cipher::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ceasar_cipher-Release-1c157e6ac0fdad834e05.json",
+					"jsonFile" : "target-ceasar_cipher-Debug-576231aa6ad04d61ae0a.json",
 					"name" : "ceasar_cipher",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "dct::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-dct-Release-7a9393e51c236f8c1dff.json",
+					"jsonFile" : "target-dct-Debug-bedafde7a4a027923082.json",
 					"name" : "dct",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "fib::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-fib-Release-f06fcd7c58194a00581e.json",
+					"jsonFile" : "target-fib-Debug-f092c3c38c700c85bc42.json",
 					"name" : "fib",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "linked_list::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-linked_list-Release-51472634863a12fa60f9.json",
+					"jsonFile" : "target-linked_list-Debug-7dfb34eef0022d0a8ee6.json",
 					"name" : "linked_list",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lsmsg::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lsmsg-Release-9f90e19e641575dfffe4.json",
+					"jsonFile" : "target-lsmsg-Debug-fae6a73da3f7d2e5c476.json",
 					"name" : "lsmsg",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lzw::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lzw-Release-c01375f84677769955eb.json",
+					"jsonFile" : "target-lzw-Debug-c4aab4ea28e9684965c2.json",
 					"name" : "lzw",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "perlin_noise::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-perlin_noise-Release-61234682df1843169e38.json",
+					"jsonFile" : "target-perlin_noise-Debug-ab9d279fb832813e188e.json",
 					"name" : "perlin_noise",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "po_tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-po_tests-Release-a359d76ca87c91ac986d.json",
+					"jsonFile" : "target-po_tests-Debug-69dd11e6cace1e2d8dc3.json",
 					"name" : "po_tests",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "rng::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-rng-Release-005fd8d4c14b4a5e39e3.json",
+					"jsonFile" : "target-rng-Debug-3e77c1d7af74257b3d3f.json",
 					"name" : "rng",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "t::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-t-Release-276dc7df8b965053dd3d.json",
+					"jsonFile" : "target-t-Debug-932e36349b91de299e17.json",
 					"name" : "t",
 					"projectIndex" : 0
 				}
