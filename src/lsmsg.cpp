@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <chrono>
 #include <cmath>
 #include <iostream>
@@ -6,31 +7,47 @@
 
 #include <boost/algorithm/string/trim.hpp>
 
-bool init(const int _argc, const char *_argv[], std::string &_message);
+// fetch input from pipe or arg into _text
+bool fetch_input(const int _argc, const char *_argv[], std::string &_message);
 
-double I(double _probability);                                    // Informationsgehalt eines Zeichens: I(x) = log2(1/p(x)) bit
-double H(size_t _char_sum, std::map<char, size_t> &_char_counts); // Entropie (mittlerer Informationsgehalt der Zeichen einer Nachricht)
-                                                                  // Summe aus p(x) * I(x)
-double H0(size_t _alphabet_sum);                                  // Entscheidungsgehalt == maximaler Informationsgehalt == Gleichverteilung
-double R(double _H0, double _H);                                  // Redundanz: R = H0 - H
-double r(double _H0, double _H);                                  // relative Redundanz: r = (H0 - H) / H0 %
+// Informationsgehalt eines Zeichens: I(x) = log2(1/p(x)) Bit
+double I(double _p);                                    
+// Entropie (mittlerer Informationsgehalt der Zeichen einer Nachricht), Summe aus p(x) * I(x)
+double H(size_t _char_sum, std::map<char, size_t> &_char_counts); 
+ // Entscheidungsgehalt == maximaler Informationsgehalt == Gleichverteilung                                                                 
+double H0(size_t _alphabet_sum);                                  
+// Redundanz: R = H0 - H
+double R(double _H0, double _H);                                  
+// relative Redundanz: r = (H0 - H) / H0
+double r(double _H0, double _H);                                  
 // TODO: L (mittlere Codewortlänge)
 
 int main(const int argc, const char *argv[])
 {
-    auto start = std::chrono::high_resolution_clock::now();
-    std::string message;
 
-    if (!init(argc, argv, message))
+    std::string message;
+    if (!fetch_input(argc, argv, message))
     {
         std::cout << "usage: provide a message via environment arguments or pipe\n";
         return -1;
     }
 
     std::map<char, size_t> char_table;
-    size_t char_sum = message.size();
+    size_t char_sum = char_table.size();
+
+    // Timer start
+    auto start = std::chrono::high_resolution_clock::now();
+
     for (auto c : message)
         ++char_table[c];
+
+    // Timer stop
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double, std::milli> duration = end - start;
+
+    std::map<size_t, char> char_table2;
+    for(auto& p : char_table)
+        char_table2.insert({p.second, p.first});
 
     // Berechnungen
     double entropie = H(char_sum, char_table);
@@ -39,15 +56,12 @@ int main(const int argc, const char *argv[])
     double rel_redundanz = r(max_entropie, entropie);
 
 
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double, std::milli> duration = end - start;
-
     // Ausgabe
     // std::cout << "Nachricht: " << nachricht << std::endl;
     std::cout << "Länge: " << message.size() << " Zeichen" << std::endl;
     std::cout << "Alphabet: ";
-    for (auto c : char_table)
-        std::cout << "\"" << c.first << "\" : " << c.second << ";" << ' ';
+    for (auto c : char_table2)
+        std::cout << "\"" << c.second << "\" : " << c.first << ";" << ' ';
     std::cout << std::endl;
     std::cout << "Maximale Entropie H0: " << max_entropie << std::endl;
     std::cout << "Entropie H: " << entropie << std::endl;
@@ -58,9 +72,9 @@ int main(const int argc, const char *argv[])
     return 0;
 }
 
-double I(double _probability)
+double I(double _p)
 {
-    return log2(1.0 / _probability);
+    return log2(1.0 / _p);
 }
 
 double H(size_t _char_sum, std::map<char, size_t> &_char_counts)
@@ -89,7 +103,7 @@ double r(double _H0, double _H)
     return (_H0 - _H) / _H0;
 }
 
-bool init(const int _argc, const char *_argv[], std::string &_message)
+bool fetch_input(const int _argc, const char *_argv[], std::string &_message)
 {
     if (_argc > 1)
     {

@@ -1,0 +1,186 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "stuff",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "a_stern::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-a_stern-Release-d61859ccdbe3820b1eb5.json",
+					"name" : "a_stern",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ascii::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ascii-Release-065f9d246a13cd999120.json",
+					"name" : "ascii",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ceasar_cipher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ceasar_cipher-Release-616ea291d7f3d12e7172.json",
+					"name" : "ceasar_cipher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dct::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dct-Release-8217b3677cd9cd0ebef7.json",
+					"name" : "dct",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "dijkstra::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-dijkstra-Release-8a300b17c6e7662f9de5.json",
+					"name" : "dijkstra",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "fib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fib-Release-43e0b57219dc778246a1.json",
+					"name" : "fib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "linked_list::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-linked_list-Release-6f3e8debd7ebf852f7ff.json",
+					"name" : "linked_list",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lsmsg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lsmsg-Release-3e22e6afdb420a915d5d.json",
+					"name" : "lsmsg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lzw::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lzw-Release-b5a98d12af6034922561.json",
+					"name" : "lzw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minefield::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minefield-Release-331aba1177aae95be85f.json",
+					"name" : "minefield",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "perlin_noise::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-perlin_noise-Release-08f644ed24c41d4025e1.json",
+					"name" : "perlin_noise",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "po_tests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-po_tests-Release-5ad1cf50670bf4d84b1e.json",
+					"name" : "po_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rng::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rng-Release-d69ea4ec29b0cbc9ffb7.json",
+					"name" : "rng",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sync_with_stdio::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sync_with_stdio-Release-f96a8ae4d9cfedff8280.json",
+					"name" : "sync_with_stdio",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t-Release-5fb079966246e673bec5.json",
+					"name" : "t",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/llytaii/dev/cpp/stuff/build",
+		"source" : "/home/llytaii/dev/cpp/stuff"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -77,6 +77,8 @@
         "any": "cpp",
         "coroutine": "cpp",
         "unordered_set": "cpp",
-        "source_location": "cpp"
+        "source_location": "cpp",
+        "executor": "cpp",
+        "io_context": "cpp"
     }
 }
